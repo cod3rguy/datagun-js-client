@@ -5,6 +5,9 @@
   </head>
   <body>
     <script src="./dist/datagun.js"></script>
-    <script>if(datagun) datagun()</script>
+    <script>
+      datagun.initialize('apikey')
+      datagun.paintTarget('myTarget', (data) => console.log(data))
+    </script>
   </body>
 </html>

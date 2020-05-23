@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint ./src",
-    "build": "lint && webpack",
-    "build:dev": "lint && webpack --mode development",
+    "build": "npm run lint && webpack",
+    "build:dev": "npm run lint && webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/cod3rguy/datagun-js-client#readme",
   "devDependencies": {
+    "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
@@ -29,6 +30,6 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "eslint": "^7.0.0"
+    "socket.io-client": "^2.3.0"
   }
 }
